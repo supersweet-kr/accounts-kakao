@@ -7,10 +7,10 @@ Package.describe({
 });
 
 Package.onUse(function(api) {
-  api.use('accounts-base', ['client', 'server']);
+  api.use('accounts-base@1.2.2', ['client', 'server']);
   // Export Accounts (etc) to packages using this one.
-  api.imply('accounts-base', ['client', 'server']);
-  api.use('accounts-oauth', ['client', 'server']);
+  api.imply('accounts-base@1.2.2', ['client', 'server']);
+  api.use('accounts-oauth@1.1.8', ['client', 'server']);
   api.use('spectrum:kakao@0.0.3', ['client', 'server']);
 
   api.addFiles('kakao.js');
